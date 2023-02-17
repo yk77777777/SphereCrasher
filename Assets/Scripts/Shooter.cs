@@ -15,16 +15,16 @@ public class Shooter : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 100f)) {
                 Destroy(hit.collider.gameObject);
             }
-        /*
-        foreach(RaycastHit hit in Physics.RaycastAll(ray)) {
-        Destroy(hit.collider.gameObject);
-        }
-        */
-        /*
-        foreach (RaycastHit hit in Physics.SphereCastAll(ray,3f)) {
-        Destroy(hit.collider.gameObject);
-        }
-        */
+        
+            // foreach(RaycastHit hit in Physics.RaycastAll(ray)) {
+            //     Destroy(hit.collider.gameObject);
+            // }
+        
+        
+            // foreach (RaycastHit hit in Physics.SphereCastAll(ray,3f)) {
+            // Destroy(hit.collider.gameObject);
+            // }
+        
         }
     }
 }
